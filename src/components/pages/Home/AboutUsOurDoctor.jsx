@@ -31,6 +31,7 @@ export const AboutUsOurDoctor = () => {
             <div className="AboutUsOurDoctor_content">
                 <div className="AboutUsOurDoctor_pagination">
                     <div className="AboutUsOurDoctor_pagination_title">
+                        <span><img src={doctor} alt="doctor" /></span>
                         <h1>Что надо знать, выбирая клинику?</h1>
                     </div>
                     <div className="AboutUsOurDoctor_pagination_item">
