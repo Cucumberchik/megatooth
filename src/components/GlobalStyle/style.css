@@ -122,9 +122,9 @@
     height: 50%;
     background-repeat: no-repeat;
     img{
-        margin-top: -140px;
-        width: 340px;
-        height: 300px;
+        margin-top: -150px;
+        width: 320px;
+        height: 340px;
     }
 }
 .home_swiper_title{
@@ -133,7 +133,7 @@
     flex-direction: column;
     justify-content: space-between;
     h3{
-        width: 70%;
+        width: 400px;
         font-family: var(--font-family);
         font-weight: 700;
         font-size: 34px;
@@ -148,6 +148,7 @@
         color: #fff;
     }
     p{
+        width: 400px;
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 20px;

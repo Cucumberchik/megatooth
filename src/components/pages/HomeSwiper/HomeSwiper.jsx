@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import svg from "../../assets/backdrop_swiper.png"
-import { EightK } from "@mui/icons-material";
+
 export default () => {
     let data = [
         { title: "Имплантация зубов", price: "18 000", description: "По новой прогрессивной методике", img: 'https://s3-alpha-sig.figma.com/img/14bf/cf0a/7fef31556f8b8063812802f6af78dc66?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qZAL06VEjWCDvnAVOe1vcGvPvhrNYoik~0vAbL9ekPGxV19qqy0aSdyEkgoOFGuhEyi6U7xn5vDXt444PyR9Eu2mGOolmGZzdjVhILrfBHATXG47AOXoX6ilAY6GMOy1Pjz1md0X4ZKcUnru8FUPqII6ybwdn~Ixc-K2ISSLo4TKqwrkLsdRUiGSIgULmwD3PYTNn7DrtjGGa6adP8yWYM-CJLFeH30JZk18raBGaaCwB0VRa6kmlpnjVbT83oavfaDHkTkVrzxB8xW~Iu8VO8B5UyHlWaMS4L3rmgXMNRvy67nkq4aM3SURAtK24D1H25367DmpIKnQhZTWUL2qnQ__', link: "" },
@@ -66,7 +66,7 @@ export default () => {
                                         backgroundImage: `url(${svg})`,
 
                                     }}>
-                                        {/* <img className="home_swiper_people" src={el.img} alt="image" /> */}
+                                        <img className="home_swiper_people" src={el.img} alt="image" />
                                     </div>
                                 </div>
                             </div>
