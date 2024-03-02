@@ -181,7 +181,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: violet;
 }
 .AboutUsOurDoctor_content{
     width: 75%;
@@ -201,6 +200,9 @@
     gap: 20px;
 }
 .AboutUsOurDoctor_pagination_title{
+    img{
+        display: none;
+    }
     h1{
         font-family: var(--font-family);
         font-weight: 700;

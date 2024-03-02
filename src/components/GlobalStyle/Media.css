@@ -1,0 +1,51 @@
+@media only screen and (max-width: 550px) {
+    .AboutUsOurDoctor_content{
+        width: 100%;
+    }
+    .AboutUsOurDoctor_pagination{
+       width: 99%;
+    }
+    .AboutUsOurDoctor_pagination_title{
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        h1{
+            width: 90%;
+            font-size: 19px;
+        }
+        img{
+            display: flex;
+            height: 120px;
+            width:100px;
+        }
+    }
+    .AboutUsOurDoctor_pagination_detail{
+        overflow-y: auto;
+        h3{
+            text-align: center;
+            font-size: 19px;
+        }
+        p{
+            font-size: 17px;
+        }
+        span{
+            img{
+                height: 20px;
+            }
+        }
+    }
+    .AboutUsOurDoctor_pagination_btn{
+        display: none;
+    }
+    .AboutUsOurDoctor_doctor{
+        display: none;
+    }
+  }
