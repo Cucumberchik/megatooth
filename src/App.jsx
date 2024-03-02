@@ -1,10 +1,12 @@
 import "./components/GlobalStyle/style.css"
 import "./components/GlobalStyle/Media.css"
-import { AboutUsOurDoctor } from "./components/pages/Home/AboutUsOurDoctor";
+import Navbar from "./components/pages/Navbar/Navbar";
+import Routers from "./components/Routes/Routes"
 
 function App() {
   return <div className="App">
-    <AboutUsOurDoctor />
+    <Navbar />
+    <Routers />
   </div>;
 }
 
