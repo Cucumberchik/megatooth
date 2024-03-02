@@ -2,6 +2,7 @@ import "./components/GlobalStyle/style.css"
 
 function App() {
   return <div className="App">
+
   </div>;
 }
 
