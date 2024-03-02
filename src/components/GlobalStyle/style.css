@@ -173,3 +173,118 @@
         box-shadow: 0 10px 12px 0 rgba(37, 63, 65, 0.1);
     }
 }
+
+/* =====--AboutUsOurDoctor--===== */
+.AboutUsOurDoctor{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: violet;
+}
+.AboutUsOurDoctor_content{
+    width: 75%;
+    height: 89%;
+    padding: 25px 10px;
+    border-radius: 8px;
+    display: flex;
+    background: #f2fafb;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.AboutUsOurDoctor_pagination{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.AboutUsOurDoctor_pagination_title{
+    h1{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        color: #253f41;
+    }
+}
+
+.AboutUsOurDoctor_pagination_item{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.AboutUsOurDoctor_pagination_page{
+    display: flex;
+    gap: 10px;
+
+}
+.aboutusdoctor{
+    transition: 0.4s;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    border: none;
+}
+.aboutusdoctor.active{
+    color: white;
+    background: var(--color);
+}
+.AboutUsOurDoctor_pagination_btn{
+    button{
+        border-radius: 5px;
+        border: none;
+        width: 172px;
+        height: 35px;
+        background: #1898a1;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        color: #fff;
+        transition: 0.4s;
+    }
+    button:hover{
+        background:var(--color);
+        box-shadow: 0 5px 12px 0 rgba(50, 221, 233, 0.479);
+    }
+}
+.AboutUsOurDoctor_pagination_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        color: #253f41;
+    }
+    span{
+        display: flex;
+        align-items: flex-start;
+    }
+    p{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 143%;
+        color: #253536;
+    }
+}
+.AboutUsOurDoctor_doctor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 350px;
+    }
+}
