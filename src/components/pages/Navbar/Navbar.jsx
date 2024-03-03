@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 import logo from "../../assets/CompanyLogo.png"
+import whiteLogo from "../../assets/CompanyLogoWhite.png"
 import odnaclassniki from "./icons/odnaclassnik_small_icon.png"
 import instagram from "./icons/instagram_small_icon.png"
 import wk from "./icons/wk_small_icon.png"
@@ -18,7 +19,7 @@ import { LiaGlassesSolid } from "react-icons/lia";
 import { LiaMedalSolid } from "react-icons/lia";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { RiPencilLine } from "react-icons/ri";
-
+import { PiListFill } from "react-icons/pi";
 
 export default function Navbar() {
     const [sityId, setSityId] = useState(0)
@@ -105,30 +106,32 @@ export default function Navbar() {
         <div className="navbar">
             <div className="navbar_content">
                 <div className="navbar_navigation_user">
-                    <button onClick={() => setModalSity(true)} >
+                    <button className="blockmaxwidth500" onClick={() => setModalSity(true)} >
                         <PiNavigationArrow />
                         {sity[sityId]}
                         <IoIosArrowDown />
                     </button>
-                    <button onClick={() => window.location.href = 'tel:8 (800) 200-45-65'}>
+                    <button className="blockmaxwidth500" onClick={() => window.location.href = 'tel:8 (800) 200-45-65'}>
                         8 (800) 200-45-65
                     </button>
-                    <button>Заказать звонок</button>
-                    <button>
+                    <button className="nonemaxwidth500">Заказать звонок</button>
+                    <button className="nonemaxwidth500">
                         <TbClockHour3 />
                         В будни с 9:00 до 18:00
                     </button>
-                    <button>
+                    <button className="nonemaxwidth500">
                         <HiOutlineMail />
                         Consult@clinic.ru
-                    </button>
-                    <button>
+                    </button >
+                    <button className="nonemaxwidth500">
                         <LiaGlassesSolid />
                         Версия для слабовидящих
                     </button>
                 </div>
                 <div className="navbar_logo">
-                    <img src={logo} alt="" />
+                    <img className="blockmaxwidth500" src={whiteLogo} alt="logo" />
+                    <button className="blockmaxwidth500 button nav"><PiListFill /></button>
+                    <img className="nonemaxwidth500" src={logo} alt="logo" />
                     <div className="navbar_social_icon">
                         <img src={odnaclassniki} alt="odnaclassniki" />
                         <img src={instagram} alt="instagram" />
@@ -136,13 +139,13 @@ export default function Navbar() {
                         <img src={facebook} alt="facebook" />
                         <img src={youtube} alt="youtube" />
                     </div>
-                    <button>
+                    <button className="nonemaxwidth500">
                         <LiaMedalSolid />
                         Награды и сертификаты</button>
-                    <button>
+                    <button className="nonemaxwidth500">
                         <BiMessageRoundedDetail />
                         Оставить отзыв или написать директору</button>
-                    <button>
+                    <button className="nonemaxwidth500">
                         <RiPencilLine />
                         Записаться на приём</button>
                 </div>

@@ -1,4 +1,36 @@
 @media (max-width: 550px) {
+    .navbar{
+        height: 10vh;
+    }
+    .navbar_navigation_user{
+        width: 90%;
+        
+    }
+
+    .navbar_navigate{
+        display: none;
+    }
+    .navbar_logo{
+        width: 100%;
+        padding: 5px 10px;
+        background: var(--color);
+    }
+    .blockmaxwidth500.button.nav{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        color: var(--color);
+    }
+    .navbar_logo_img{
+        display: none;
+    }
+    .navbar_social_icon{
+        display: none;
+    }
     .AboutUsOurDoctor_content{
         width: 100%;
     }
@@ -42,10 +74,19 @@
             }
         }
     }
+    .blockmaxwidth500{
+        display: block;
+    }
+    .home_wrapper{
+        display: none;
+    }
     .AboutUsOurDoctor_pagination_btn{
         display: none;
     }
     .AboutUsOurDoctor_doctor{
+        display: none;
+    }
+    .nonemaxwidth500{
         display: none;
     }
   }

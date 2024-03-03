@@ -307,13 +307,10 @@
     justify-content: space-between;
 }
 .navbar_navigation_user{
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: 0.2s;
         font-family: var(--font-family);
         font-weight: 400;
@@ -327,6 +324,12 @@
         color: #2cb2bb;
     }
 }
+.blockmaxwidth500{
+    display: none;
+}
+.nonemaxwidth500{
+    display: flex;
+}
 .navbar_logo{
     width: 95%;
     display: flex;
@@ -336,7 +339,6 @@
         transition: 0.3s;
         width: 20%;
         height: 50px;
-        display: flex;
         align-items: center;
         font-family: var(--font-family);
         font-weight: 500;
@@ -391,7 +393,7 @@
     background: #2fc2cb;
 }
 .navbar_navigate_select{
-    position: fixed;
+    position: absolute;
     margin-top: 5px;
     padding: 8px;
     width: 280px;
@@ -427,10 +429,11 @@
 }
 .ModalWindowSity_content{
     width: 320px;
+    height: 30%;
+    margin-top: 300px;
     border-radius: 10px;
     padding: 20px 10px;
     background: #f4fffe;
-    margin-top: 250px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
