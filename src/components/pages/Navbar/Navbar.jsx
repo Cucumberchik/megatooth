@@ -129,8 +129,8 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className="navbar_logo">
-                    <img className="blockmaxwidth500" src={whiteLogo} alt="logo" />
-                    <button className="blockmaxwidth500 button nav"><PiListFill /></button>
+                    <img className="none" src={whiteLogo} alt="logo" />
+                    <button className="none button nav"><PiListFill /></button>
                     <img className="nonemaxwidth500" src={logo} alt="logo" />
                     <div className="navbar_social_icon">
                         <img src={odnaclassniki} alt="odnaclassniki" />

@@ -323,8 +323,10 @@
         color: #2cb2bb;
     }
 }
-.blockmaxwidth500{
+.none{
     display: none;
+}
+.blockmaxwidth500{
 }
 .nonemaxwidth500{
     display: flex;

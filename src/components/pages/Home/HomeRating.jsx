@@ -80,7 +80,7 @@ export const HomeRating = () => {
             ))}
           </div>
         </div>
-        <div className="HomeRating_img">
+        <div className="HomeRating_img nonemaxwidth500">
           <img src={phone} alt="phone" />
         </div>
       </div>

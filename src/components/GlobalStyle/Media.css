@@ -6,7 +6,9 @@
         width: 90%;
         
     }
-
+    .none{
+        display: block;
+    }
     .navbar_navigate{
         display: none;
     }
@@ -73,6 +75,9 @@
                 height: 20px;
             }
         }
+    }
+    .HomeRating_rating_item{
+        overflow-x: auto;
     }
     .blockmaxwidth500{
         display: block;
