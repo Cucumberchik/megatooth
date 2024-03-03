@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import svg from "../../assets/backdrop_swiper.png"
@@ -11,16 +11,14 @@ export const HomeSwiper = () => {
         { title: "Немецкий имплант премиум класса", price: "23 000", description: "", img: "https://s3-alpha-sig.figma.com/img/59d2/f9ac/ed2f88630700401e7e16d4a2a540e5bd?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gQVZi0cMzNFcsNNG90lMl6OqRBymNlRXAKoIghNE3kP1UT36iAfl0KEfUO~cNCfbMEUqRAtT~st-iSkFWZtQbUjCA7of06yc-o16RKmQhSZU0GeEzgRDQGWDFrVg1534XMXg9fFPF45MXHZVXFxzaRzX-AJRjUswTIgBy-q7KJpeG5QvWRqQPyYIlEJujItUC1DZ3J-mOIG4zffcZ4nEvCUcTdLLHmKNOxwgie0AYa0f9qCFJ9nNdyrcL7BYCAwcO9lA2uvLRWCop~tRs88MlZuWgp6FT4~o0UDcJazgl1QTXrOaK40Evk355BvjA~WuMs~Gu5ZkJyq9J2LP0~BrMQ__", link: "" }
     ];
     const [swiper, setSwiper] = useState(0)
-    const [swiperTimer, setSwiperTimer] = useState(1)
     const [swiperTime, setSwiperTime] = useState(false)
     const Swipe = (type, id) => {
         if (!swiperTime) {
-            setSwiperTimer(1)
             setSwiperTime(true)
             setTimeout(() => { setSwiperTime(false) }, 1000)
-            if (type == "get") {
+            if (type === "get") {
                 setSwiper(id)
-            } else if (type == "next") {
+            } else if (type === "next") {
                 if (data.length - 1 > swiper) {
                     setSwiper(swiper + 1)
 
@@ -39,21 +37,14 @@ export const HomeSwiper = () => {
             return
         }
     }
-    useEffect(() => {
-        const timeInterval = setInterval(() => {
-            swiperTime && setSwiperTimer(swiperTimer => (swiperTimer >= 1 ? swiperTime - 1 : 0))
-        })
-        return () => {
-            clearInterval(timeInterval)
-        }
-    }, [swiperTime])
+
     return (
 
         <div className="home_wrapper">
             <div className="home_wrapper_content">
                 <div className="home_wrappers">
                     {data.map((el, id) => (
-                        <div key={id} className={`home_swiper ${swiper == id ? "active" : "none"}`}>
+                        <div key={id} className={`home_swiper ${swiper === id ? "active" : "none"}`}>
                             <div className="home_swiper_content">
                                 <div className="home_swiper_title">
                                     <h3>{el.title}</h3>
@@ -66,7 +57,7 @@ export const HomeSwiper = () => {
                                         backgroundImage: `url(${svg})`,
 
                                     }}>
-                                        <img className="home_swiper_people" src={el.img} alt="image" />
+                                        <img className="home_swiper_people" src={el.img} alt="logo" />
                                     </div>
                                 </div>
                             </div>
@@ -76,8 +67,8 @@ export const HomeSwiper = () => {
                 </div>
                 <div className="home_swiper_btns">
                     <div className="home_swiper_btn">
-                        <button className={swiper == 0 ? "nul" : "normal"} onClick={() => Swipe('prev')}><IoIosArrowBack /></button>
-                        <button className={swiper == data[data.length - 1] - 1 ? "nul" : "normal"} onClick={() => Swipe('next')}><IoIosArrowForward /></button>
+                        <button className={swiper === 0 ? "nul" : "normal"} onClick={() => Swipe('prev')}><IoIosArrowBack /></button>
+                        <button className={swiper === data[data.length - 1] - 1 ? "nul" : "normal"} onClick={() => Swipe('next')}><IoIosArrowForward /></button>
                     </div>
                 </div>
 
@@ -85,7 +76,7 @@ export const HomeSwiper = () => {
             <div className="home_title_tegs">
                 <div className="home_title_tegs_content">
                     {data.map((el, id) => (
-                        <button className={`home_swiper_nagigate ${id == swiper ? "none" : "norm"}`} key={id} onClick={() => Swipe("get", id)}> {el.title}</button>
+                        <button className={`home_swiper_nagigate ${id === swiper ? "none" : "norm"}`} key={id} onClick={() => Swipe("get", id)}> {el.title}</button>
                     ))}
                 </div>
             </div>

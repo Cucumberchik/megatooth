@@ -211,7 +211,6 @@
         color: #253f41;
     }
 }
-
 .AboutUsOurDoctor_pagination_item{
     display: flex;
     width: 70%;
@@ -358,7 +357,7 @@
         box-shadow: 0 10px 12px 0 rgba(44, 178, 187, 0.16);
         background: #1fc6d0;
         color: #fff;
-    }
+    } 
 }
 .navbar_navigate{
     display: flex;
@@ -416,7 +415,97 @@
         background: #a8a8a836;
     }
 }
-
+/* =====--HomeRating---===== */
+.HomeRating{
+    width: 100%;
+    height: 400px;
+    background: #e3f5f7;
+}
+.HomeRating_content{
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.HomeRating_title{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.HomeRating_title_item{
+    h1{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        color: #253f41;
+    }
+}
+.HomeRating_rating_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.HomeRating_rating_item{
+    display: flex;
+    gap: 20px;
+}
+.HomeRating_rating_social{
+    display: flex;
+    transition: 0.3s;
+    gap: 20px;
+    width: 300px;
+    border-radius: 8px;
+    height: 60px;
+    img{
+        width: 43px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08), 0 10px 12px 0 rgba(44, 178, 187, 0.16);
+        background: #fff;
+    }
+    span{
+        display: none;
+    }
+    
+}
+.HomeRating_rating_social:hover{
+    background: #fff;
+    span{
+        display: flex;
+    }
+}
+.Home_rating_social_title{
+    width: 70%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #253f41;
+    }
+    h4{
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 114%;
+        color: #2cb2bb;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.HomeRating_img{
+    img{
+        height: 430px;
+    }
+}
 /* =====--Modal window--==== */
 .ModalWindowSity{
     position: fixed;
