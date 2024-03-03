@@ -1,4 +1,9 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
+}
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
 }
