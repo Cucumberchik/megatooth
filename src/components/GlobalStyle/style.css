@@ -542,3 +542,14 @@
         border: none;
     }
 }
+/* ======--Footer--====== */
+.Footer{
+    background: black;
+    width: 100%;
+    height: 40vh;
+}
+.Footer_content{
+    background: white;
+    width: 90px;
+    
+}
