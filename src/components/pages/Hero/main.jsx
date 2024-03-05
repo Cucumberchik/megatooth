@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./main.css";
 import teethPic from "./icons/teeth.svg";
 
