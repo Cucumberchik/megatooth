@@ -4,7 +4,10 @@
   }
 
 
-
+*{
+    padding: 0;
+    margin: 0;
+}
   /* =========--Home Swiper--======== */
 
 .home_wrapper{
@@ -542,6 +545,72 @@
         border: none;
     }
 }
+.Authorization{
+    width: 100%;
+    height: 210%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.493);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Authorization_content{
+    margin-top: 310px;
+    height: 300px;
+    width: 520px;
+    z-index: 100;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-size: 40px;
+        color: #2cb2bb;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+.css-0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    input{
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: -6px;
+        padding: 10px 10px;
+    }
+    button{
+        width: 200px;
+    }
+}
+.css-batk84-MuiInputBase-root-MuiFilledInput-root::after{
+    border-bottom: 2px solid var(--color);
+}
+.auth_platforms{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 49%;
+    }
+}
+.Login{
+    width: 100%;
+    height: 210%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.493);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ======--Footer--====== */
 .Footer{
     width: 100%;

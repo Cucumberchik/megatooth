@@ -11,6 +11,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiClock2 } from "react-icons/ci";
 import { RiPencilLine } from "react-icons/ri";
 import { TbMessageDots } from "react-icons/tb";
+import axios from "axios";
 
 export default function Footer() {
   const [list, setList] = useState({ name: "", number: "" })
@@ -113,7 +114,7 @@ export default function Footer() {
             <div key={id} className="Footer_services_item">
               <h2>{ell.title}</h2>
               {ell.src.map((el, id) => (
-                <h4>{el}</h4>
+                <h4 key={id}>{el}</h4>
               ))}
             </div>
           ))}

@@ -20,6 +20,7 @@ import { LiaMedalSolid } from "react-icons/lia";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { RiPencilLine } from "react-icons/ri";
 import { PiListFill } from "react-icons/pi";
+import Authorization from "../../modal_window/register"
 
 export default function Navbar() {
     const [sityId, setSityId] = useState(0)
@@ -104,6 +105,7 @@ export default function Navbar() {
     ]
     return (
         <div className="navbar">
+            <Authorization />
             <div className="navbar_content">
                 <div className="navbar_navigation_user">
                     <button className="blockmaxwidth500" onClick={() => setModalSity(true)} >
