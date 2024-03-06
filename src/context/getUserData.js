@@ -27,6 +27,7 @@ function GetUserDataContext({ children }) {
     useEffect(() => {
         unsubscribe()
     }, [])
+    console.log(user);
     let values = {
         user,
         handleUserGoogle,

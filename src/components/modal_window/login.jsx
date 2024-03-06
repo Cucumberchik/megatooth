@@ -31,8 +31,7 @@ export default function Login({ login, setLogin }) {
             let obj = {
                 password: password.onePass,
                 email: values.email,
-                name: values.name,
-                surnmane: values.surnmane
+                data: `${values.name} ${values.surname}`
             }
             dispath({ type: types.login, payload: obj })
         } else {
