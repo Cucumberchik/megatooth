@@ -1,5 +1,5 @@
 import phone from "./icons/phone_rating.png"
-export const HomeRating = () => {
+const HomeRating = () => {
   let social = [
     [
       {
@@ -87,3 +87,4 @@ export const HomeRating = () => {
     </div>
   )
 }
+export default HomeRating
