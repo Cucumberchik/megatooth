@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import svg from "../../assets/backdrop_swiper.png"
+import svg from "../../../assets/backdrop_swiper.png"
 
 export const HomeSwiper = () => {
     let data = [

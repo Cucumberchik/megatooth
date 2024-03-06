@@ -1,7 +1,6 @@
 import { useState } from "react"
-import doctor from "../../assets/AboutUsOurDoctor.png"
-import check from "../../assets/checkSmoll.png"
-
+import doctor from "../../../assets/AboutUsOurDoctor.png";
+import check from "../../../assets/checkSmoll.png"
 export const AboutUsOurDoctor = () => {
     const [pagin, setPagin] = useState(0)
     const [timeBlock, setTimeBlock] = useState(false)

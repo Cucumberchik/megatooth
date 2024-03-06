@@ -2,10 +2,12 @@ import "./components/GlobalStyle/style.css";
 import "./components/GlobalStyle/Media.css";
 import Navbar from "./components/pages/Navbar/Navbar";
 import Routers from "./components/Routes/Routes";
-import Footer from "./components/Footer/Footer";
-import Authorization from "./components/modal_window/register";
+import Footer from "./Footer/Footer";
+import Authorization from "./components/modal_window/signin";
 import { useState } from "react";
 import Login from "./components/modal_window/login";
+
+
 
 export default function App() {
     let [signin, setSign] = useState(false)
@@ -14,9 +16,9 @@ export default function App() {
         <div className="App">
             <Navbar />
             <Routers />
-            <Footer />
-            <Authorization signin={signin} setSign={setSign} />
-            <Login />
+            <Footer setSign={setSign} />
+            <Authorization setLogin={setLogin} signin={signin} setSign={setSign} />
+            <Login login={login} setLogin={setLogin} />
         </div>
     );
 }

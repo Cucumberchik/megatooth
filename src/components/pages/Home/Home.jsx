@@ -3,7 +3,7 @@ import { HomeSwiper } from './HomeSwiper'
 import { AboutUsOurDoctor } from './AboutUsOurDoctor'
 import Main from "../Hero/main";
 import { HomeRating } from './HomeRating';
-import Authorization from "../../modal_window/register"
+import Authorization from "../../modal_window/signin"
 
 export default function Home() {
     return (

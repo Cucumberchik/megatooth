@@ -11,9 +11,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiClock2 } from "react-icons/ci";
 import { RiPencilLine } from "react-icons/ri";
 import { TbMessageDots } from "react-icons/tb";
-import axios from "axios";
 
-export default function Footer() {
+export default function Footer({ setSign }) {
   const [list, setList] = useState({ name: "", number: "" })
   let num = list.number.replace(/[a-z *&/!@#№$?,.-]/g, '').slice(0, 11)
 
@@ -155,7 +154,7 @@ export default function Footer() {
           </div>
           <div className="Footer_basement_item">
             <button> <RiPencilLine /> Записаться на приём</button>
-            <button> <TbMessageDots /> Оставить отзыв <br /> или написать директору</button>
+            <button onClick={() => setSign(true)}> <TbMessageDots /> Оставить отзыв <br /> или написать директору</button>
           </div>
           <div className="Footer_basement_item">
             <h1>Подписывайте на нас в соцсетях, <br /> чтобы быть в курсе всех собтиый</h1>

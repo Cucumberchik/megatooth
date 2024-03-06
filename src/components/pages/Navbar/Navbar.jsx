@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
-import logo from "../../assets/CompanyLogo.png"
-import whiteLogo from "../../assets/CompanyLogoWhite.png"
+import logo from "../../../assets/CompanyLogo.png"
+import whiteLogo from "../../../assets/CompanyLogoWhite.png"
 import odnaclassniki from "./icons/odnaclassnik_small_icon.png"
 import instagram from "./icons/instagram_small_icon.png"
 import wk from "./icons/wk_small_icon.png"
@@ -20,7 +20,7 @@ import { LiaMedalSolid } from "react-icons/lia";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { RiPencilLine } from "react-icons/ri";
 import { PiListFill } from "react-icons/pi";
-import Authorization from "../../modal_window/register"
+
 
 export default function Navbar() {
     const [sityId, setSityId] = useState(0)
@@ -105,7 +105,7 @@ export default function Navbar() {
     ]
     return (
         <div className="navbar">
-            <Authorization />
+
             <div className="navbar_content">
                 <div className="navbar_navigation_user">
                     <button className="blockmaxwidth500" onClick={() => setModalSity(true)} >
