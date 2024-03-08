@@ -1,17 +1,10 @@
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../firebase/firebase';
-import React, { useState } from 'react';
+import { auth } from "../firebase/firebase"
 
 
 let inital = {
     user: null
 }
 const getUser = (status = inital) => {
-    var users = null
-    onAuthStateChanged(auth, (userData) => {
-        users = userData
-    });
-
-    return { ...status, user: users }
+    return { ...status, user: auth.currentUser }
 }
 export default getUser

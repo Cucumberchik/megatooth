@@ -11,11 +11,20 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiClock2 } from "react-icons/ci";
 import { RiPencilLine } from "react-icons/ri";
 import { TbMessageDots } from "react-icons/tb";
+import { auth } from "../firebase/firebase";
+
+// import { types } from "../typeForRedux/type";
+// import { useDispatch } from "react-redux";
 
 export default function Footer({ setSign }) {
   const [list, setList] = useState({ name: "", number: "" })
   let num = list.number.replace(/[a-z *&/!@#№$?,.-]/g, '').slice(0, 11)
-
+  const user = auth.currentUser
+  console.log(user);
+  // let dispatch = useDispatch()
+  // function handleLogout() {
+  //   dispatch({ type: types.logout })
+  // }
   let clinic = [
     ["Адреса клиник", "Цены", "Новости", 'Врачи', "Акции", "Сертификаты"],
     ["О стоматологии", 'Для иногородних', "Вопросы и ответы", "Отзывы", 'Примеры работ', "Контакты"]

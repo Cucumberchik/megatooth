@@ -1,12 +1,9 @@
 import Button from '@mui/material/Button';
 import { Box, TextField } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { types } from '../../typeForRedux/type';
 import { useUserData } from '../../context/getUserData';
 
@@ -64,9 +61,6 @@ export default function Login({ login, setLogin }) {
                     <TextField sx={{
                         width: "350px"
                     }} error={pass} value={password.twoPass} onChange={(e) => setPassword({ ...password, twoPass: e.target.value })} id="standard-basic" type="password" label="Подвердите пароль" variant="standard" />
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <DatePicker sx={{ width: "200px" }} />
-                    </LocalizationProvider>
                     <Button onClick={handleUser} variant="contained">Далее</Button>
                 </Box>
                 <Box sx={{

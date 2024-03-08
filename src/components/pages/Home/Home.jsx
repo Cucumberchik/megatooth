@@ -11,7 +11,6 @@ export default function Home() {
 
             <HomeSwiper />
             <Main />
-
             <AboutUsOurDoctor />
             <HomeRating />
             <Authorization />

@@ -2,5 +2,6 @@
 
 export const types = {
     login: "register",
-    signin: "signin"
+    signin: "signin",
+    logout: "logout"
 }
