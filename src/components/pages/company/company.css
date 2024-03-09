@@ -1,0 +1,44 @@
+.company-content {
+    display: grid;
+    gap: 55px;
+    padding: 107px 0;
+}
+.company-title {
+    display: grid;
+    gap: 29px;
+}
+.company-logos {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color: rgb(37, 63, 65);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+p {
+    color: rgb(37, 63, 65);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+@media screen and (max-width: 1000px) {
+    .company-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .company-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
