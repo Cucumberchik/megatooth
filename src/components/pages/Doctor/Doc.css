@@ -1,0 +1,47 @@
+.doc_bet {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.doc_block {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 65px 0;
+}
+.doc_op h1 {
+  color: #2cb2bb;
+}
+.doc_op2 h6 {
+  color: #2cb2bb;
+}
+.block1 p {
+  font-size: 18px;
+}
+.block1 h3 {
+  color: #2cb2bb;
+  margin: 7px 0;
+}
+.doc_op {
+  display: flex;
+  width: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc_icon {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  color: #2cb2bb;
+  align-items: center;
+}

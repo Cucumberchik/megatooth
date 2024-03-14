@@ -1,7 +1,5 @@
-
-
 export const types = {
-    login: "register",
-    signin: "signin",
-    logout: "logout"
-}
+  login: "register",
+  signin: "signin",
+  logout: "logout",
+};
